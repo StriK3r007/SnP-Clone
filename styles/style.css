@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --blackColor: #000000;
+    --whiteColor: #ffffff;
+    --redColor: #ed1c24;
+    --grayColor: #ffffffb3;
+    --darkGrayColor: #0f0f0f;
+    --main-font: futurak;
+}
+@font-face {
+    font-family: futurak;
+    src: url(../assets/fonts/futurak.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+body {
+    background-color: var(--darkGrayColor);
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blackColor);
+    padding: 0 7%;
+    height: 90px;
+}
+.menu-icon {
+    display: none;
+}
+.logo img {
+    width: 170px;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+.nav-items a {
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+.get-a-franchise {
+    padding: 16px 16px;
+    border-radius: 35px;
+    border: 1px solid var(--whiteColor);
+}
+.order-online {
+    padding: 16px 16px;
+    border-radius: 35px;
+    background-color: var(--redColor);
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--redColor);
+    gap: 8px;
+}
+.order-online svg {
+    background-color: var(--whiteColor);
+    border-radius: 100%;
+}
+
+/* hero */
+.hero img {
+    width: 100%;
+}
+
+/* resturants */
+.restaurant {
+    background-color: var(--blackColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--whiteColor);
+    padding: 70px 10%;
+}
+.resturant-text {
+    text-align: center;
+}
+.restaurant-heading {
+    font-size: 3rem;
+}
+.restaurant-heading span {
+    font-family: futurak;
+}
+.restaurant-para {
+    margin: 20px 0px;
+    font-size: 16px;
+    color: var(--grayColor);
+}
+.brands-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+.brand-children {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+    margin-top: 40px;
+}
+.brand-image {
+    background-color: var(--whiteColor);
+    padding: 20px;
+    border-radius: 4px;
+    width: 100%;
+    height: 140px;
+}
+.brand-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.order-now-btn {
+    border: 1px solid var(--whiteColor);
+    padding: 16px;
+    text-align: center;
+    width: 70%;
+    border-radius: 100px;
+}
+.order-now-btn a {
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+
+/* franchises */
+.franchise {
+    background-color: var(--darkGrayColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--whiteColor);
+    padding: 70px 10%;
+}
+.franchise-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.franchise-container .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px;
+    gap: 20px;
+}
+.franchise-container .row img {
+    width: 600px;
+    border-radius: 4px;
+}
+.franchise-container .row-reverse {
+    flex-direction: row-reverse;
+}
+.franchise-text {
+    display: flex;
+    flex-direction: column;
+}
+.franchise-city {
+    text-transform: uppercase;
+    color: var(--redColor);
+    letter-spacing: 8px;
+}
+.franchise-type {
+    margin: 4px 0px;
+    font-size: 2rem;
+}
+.franchise-type span {
+    font-family: var(--main-font);
+}
+.franchise-location, .franchise-contact {
+    color: var(--grayColor);
+    margin-top: 8px;
+}
+.get-direction-btn {
+    margin-top: 40px;
+}
+.get-direction-btn button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: transparent;
+    border-radius: 40px;
+    padding: 10px 20px;
+    border: 1px solid var(--whiteColor);
+    color: var(--whiteColor);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.get-direction-btn span {
+    background-color: var(--whiteColor);
+    border-radius: 100%;
+    padding: 2px;
+}
+
+/* franchise-express */
+.franchise-express {
+    background-color: var(--blackColor);
+}
+.franchise-container .col {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.franchise-express .franchise-container row {
+    gap: 10px;
+    justify-content: space-between;
+}
+.franchise-express .franchise-image img {
+    width: 400px;
+    height: 250px;
+}
+.franchise-express .franchise-text {
+    align-items: center;
+    margin-top: 20px;
+}
+.franchise-express .franchise-text .franchise-city{
+    font-size: .8rem;
+}
+
+.footer {
+    display: flex;
+    padding: 70px 10%;
+    align-items: center;
+    flex-direction: column;
+    color: var(--whiteColor);
+    background-color: var(--blackColor);
+}
+.footer .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 24px;
+}
+.footer .row .col {
+    flex: 2;
+}
+.footer .row .col:nth-child(1) {
+    flex: 3;
+}
+.footer .col div p {
+    margin: 20px 0px;
+    color: var(--grayColor);
+}
+.footer-text-heading {
+    color: var(--whiteColor) !important;
+    font-size: 1.1rem;
+}
+.footer-text-title {
+    color: var(--whiteColor) !important;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.footer-nav-links ul {
+    list-style: none;
+}
+.footer-nav-links ul li{
+    margin-top: 12px;
+}
+.footer-nav-links ul li a {
+    text-decoration: none;
+    color: var(--grayColor);
+    margin-top: 12px;
+}
+.footer-social-links ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+.footer-social-links ul li {
+    background-color: var(--redColor);
+    padding: 8px;
+    border-radius: 40px;
+}
+.footer-note {
+    background-color: var(--darkGrayColor);
+    padding: 20px 40px;
+    margin: 0px;
+    border-radius: 12px;
+    color: var(--grayColor);
+    display: flex;
+    justify-content: space-between;
+}
+.footer-note p:nth-child(1) {
+    font-weight: bold;
+}
+.footer-note span{
+    font-size: 1.2rem;
+}
+
+
+
+
+
+/* footer */
+
+/* media-queries */
+@media(max-width: 1100px) {
+    .brand-children:nth-child(4) {
+        display: none;
+    }
+    .franchise-container .row {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+    .franchise-text {
+        align-items: center;
+    }
+    .footer {
+        padding: 70px 2%;
+    }
+}
+@media(max-width: 1000px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 851px) {
+    .header {
+        height: 60px;
+    }
+    .logo img {
+        width: 84px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .nav-items {
+        display: none;
+    }
+    .order-online {
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: .8rem;
+        padding: 6px 8px;
+    }
+    .order-online svg {
+        width: 20px;
+        height: 20px;
+    }
+    .brand-children:nth-child(4) {
+        display: none;
+    }
+}
+@media(max-width: 802px) {
+    .brand-children:nth-child(3) {
+        display: none;
+    }
+    .brand-children:nth-child(4) {
+        display: none;
+    }
+}
+@media(max-width: 430px) {
+    .brand-children:nth-child(1) {
+        width: 100%;
+    }
+    .brand-children:nth-child(2) {
+        display: none;
+    }
+    .brand-children:nth-child(3) {
+        display: none;
+    }
+    .brand-children:nth-child(4) {
+        display: none;
+    }
+}
