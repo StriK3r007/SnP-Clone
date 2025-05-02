@@ -39,6 +39,14 @@ body {
 .logo img {
     width: 170px;
 }
+.logo-text {
+    font-family: 'futurak';
+    font-size: 2rem;
+}
+.sub-title {
+    font-size: 2rem;
+    margin-top: 8px;
+}
 .navbar ul {
     display: flex;
     align-items: center;
